@@ -736,6 +736,8 @@ workflows:
             tags:
               only: /^v.*$/
 
+      - docker_system_tests: {}
+
       - static_analysis:
           requires:
             - build
